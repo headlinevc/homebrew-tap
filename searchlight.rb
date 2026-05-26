@@ -5,21 +5,21 @@
 class Searchlight < Formula
   desc "Searchlight CLI — a thin client over the Searchlight MCP server"
   homepage "https://github.com/headlinevc/searchlight-cli"
-  version "0.1.1"
+  version "0.2.0"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/headlinevc/searchlight-cli/releases/download/v0.1.1/searchlight_0.1.1_Darwin_x86_64.tar.gz"
-      sha256 "ccad6cdb9578d11a01d3fa0454d1a1092abcd72449c26461556fd4953fb74163"
+      url "https://github.com/headlinevc/searchlight-cli/releases/download/v0.2.0/searchlight_0.2.0_Darwin_x86_64.tar.gz"
+      sha256 "cbf7afa12437211fd4a65d096aa5e2852f843054ef5cb4cd4f84cbf5a9d5c86c"
 
       define_method(:install) do
         bin.install "searchlight"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/headlinevc/searchlight-cli/releases/download/v0.1.1/searchlight_0.1.1_Darwin_arm64.tar.gz"
-      sha256 "a38c02a807fda03cb66da310dbe68afcf1828e87c476e0b79a38d51a731d4310"
+      url "https://github.com/headlinevc/searchlight-cli/releases/download/v0.2.0/searchlight_0.2.0_Darwin_arm64.tar.gz"
+      sha256 "2fd3412474ad36affec7f184d343b065d0b6604f15619533f22a9889cfef54ea"
 
       define_method(:install) do
         bin.install "searchlight"
@@ -29,15 +29,15 @@ class Searchlight < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/headlinevc/searchlight-cli/releases/download/v0.1.1/searchlight_0.1.1_Linux_x86_64.tar.gz"
-      sha256 "36046af017553159509c899a17f39c4f7d68c2476fe4367250c12c4a5c045783"
+      url "https://github.com/headlinevc/searchlight-cli/releases/download/v0.2.0/searchlight_0.2.0_Linux_x86_64.tar.gz"
+      sha256 "f47af0116f4de5df5b5758b4a936a8f651387d318e2c4148b4de076f146d30ec"
       define_method(:install) do
         bin.install "searchlight"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/headlinevc/searchlight-cli/releases/download/v0.1.1/searchlight_0.1.1_Linux_arm64.tar.gz"
-      sha256 "eda685ed6d9bce8374e3d6e7937b33199385f46204e76a958b60ed85a5261ec0"
+      url "https://github.com/headlinevc/searchlight-cli/releases/download/v0.2.0/searchlight_0.2.0_Linux_arm64.tar.gz"
+      sha256 "f316e42dd5174727766d9482119458c5a509ff09a9c863d43c1fecb017cee40e"
       define_method(:install) do
         bin.install "searchlight"
       end
