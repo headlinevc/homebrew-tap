@@ -5,21 +5,21 @@
 class Gitvelocity < Formula
   desc "GitVelocity CLI — a thin client over the GitVelocity MCP server"
   homepage "https://github.com/headlinevc/gitvelocity-cli-dist"
-  version "0.1.2"
+  version "0.1.3"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/headlinevc/gitvelocity-cli-dist/releases/download/v0.1.2/gitvelocity_0.1.2_Darwin_x86_64.tar.gz"
-      sha256 "2a42a9e57aa04e72e39fbb8bc7dcab2f805f7e845ddcdc5768b9777f1964546e"
+      url "https://github.com/headlinevc/gitvelocity-cli-dist/releases/download/v0.1.3/gitvelocity_0.1.3_Darwin_x86_64.tar.gz"
+      sha256 "9d611cde4de6a06550e17e2856f42a89f03c31e0a310f0e27504c6ba9c9bf5a1"
 
       define_method(:install) do
         bin.install "gv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/headlinevc/gitvelocity-cli-dist/releases/download/v0.1.2/gitvelocity_0.1.2_Darwin_arm64.tar.gz"
-      sha256 "e7be4d948fb2119941f8817562a5002b516cceb5e42fd3ed7b88403bbffc1765"
+      url "https://github.com/headlinevc/gitvelocity-cli-dist/releases/download/v0.1.3/gitvelocity_0.1.3_Darwin_arm64.tar.gz"
+      sha256 "0bfb26436139b6bf4e2a28c319c9a34bb8ca67b664b7ed181d55d7427f6933c4"
 
       define_method(:install) do
         bin.install "gv"
@@ -29,15 +29,15 @@ class Gitvelocity < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/headlinevc/gitvelocity-cli-dist/releases/download/v0.1.2/gitvelocity_0.1.2_Linux_x86_64.tar.gz"
-      sha256 "92fa51d10edde815b45a6c6ec2a8ce491d38354d250f6d665d240a227efab37a"
+      url "https://github.com/headlinevc/gitvelocity-cli-dist/releases/download/v0.1.3/gitvelocity_0.1.3_Linux_x86_64.tar.gz"
+      sha256 "1ca3ceecda6a7428ce463cbc62c4149c579b024cce5127643c1620509e92f01f"
       define_method(:install) do
         bin.install "gv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/headlinevc/gitvelocity-cli-dist/releases/download/v0.1.2/gitvelocity_0.1.2_Linux_arm64.tar.gz"
-      sha256 "efc7c02923e49a22e25dbfa4f16a9a52a9b43f6cb8e657125b1b725dd1fd7b7e"
+      url "https://github.com/headlinevc/gitvelocity-cli-dist/releases/download/v0.1.3/gitvelocity_0.1.3_Linux_arm64.tar.gz"
+      sha256 "3eabc55a76fa78ec8771c629d06ad23e22e2835f527976a65e51655f688ccf10"
       define_method(:install) do
         bin.install "gv"
       end
