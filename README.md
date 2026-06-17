@@ -11,7 +11,7 @@ brew install headlinevc/tap/<formula>
 ## Available formulas
 
 - [`searchlight`](https://github.com/headlinevc/searchlight-cli) — Searchlight CLI
-- [`gitvelocity`](https://github.com/headlinevc/gitvelocity-cli) — GitVelocity CLI
+- [`gitvelocity`](https://github.com/headlinevc/gitvelocity-cli-dist) — GitVelocity CLI
 
 ## Maintenance
 
